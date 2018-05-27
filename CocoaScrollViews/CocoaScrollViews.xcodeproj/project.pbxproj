@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DDC879B20B8F4D5006DACF6 /* AutoExpandingTextFieldWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDC879920B8F4D5006DACF6 /* AutoExpandingTextFieldWindowController.m */; };
+		7DDC879C20B8F4D5006DACF6 /* AutoExpandingTextFieldWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DDC879A20B8F4D5006DACF6 /* AutoExpandingTextFieldWindowController.xib */; };
+		7DDC879F20BAEF50006DACF6 /* AutoExpandingTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDC879E20BAEF50006DACF6 /* AutoExpandingTextField.m */; };
 		7DF28FDE20B8EEC9000E8CEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF28FDD20B8EEC9000E8CEA /* AppDelegate.m */; };
 		7DF28FE020B8EECB000E8CEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DF28FDF20B8EECB000E8CEA /* Assets.xcassets */; };
 		7DF28FE320B8EECB000E8CEA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DF28FE120B8EECB000E8CEA /* MainMenu.xib */; };
@@ -14,6 +17,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7DDC879820B8F4D5006DACF6 /* AutoExpandingTextFieldWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoExpandingTextFieldWindowController.h; sourceTree = "<group>"; };
+		7DDC879920B8F4D5006DACF6 /* AutoExpandingTextFieldWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoExpandingTextFieldWindowController.m; sourceTree = "<group>"; };
+		7DDC879A20B8F4D5006DACF6 /* AutoExpandingTextFieldWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoExpandingTextFieldWindowController.xib; sourceTree = "<group>"; };
+		7DDC879D20BAEF50006DACF6 /* AutoExpandingTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoExpandingTextField.h; sourceTree = "<group>"; };
+		7DDC879E20BAEF50006DACF6 /* AutoExpandingTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoExpandingTextField.m; sourceTree = "<group>"; };
 		7DF28FD920B8EEC9000E8CEA /* CocoaScrollViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaScrollViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DF28FDC20B8EEC9000E8CEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7DF28FDD20B8EEC9000E8CEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +62,11 @@
 		7DF28FDB20B8EEC9000E8CEA /* CocoaScrollViews */ = {
 			isa = PBXGroup;
 			children = (
+				7DDC879820B8F4D5006DACF6 /* AutoExpandingTextFieldWindowController.h */,
+				7DDC879920B8F4D5006DACF6 /* AutoExpandingTextFieldWindowController.m */,
+				7DDC879A20B8F4D5006DACF6 /* AutoExpandingTextFieldWindowController.xib */,
+				7DDC879D20BAEF50006DACF6 /* AutoExpandingTextField.h */,
+				7DDC879E20BAEF50006DACF6 /* AutoExpandingTextField.m */,
 				7DF28FDC20B8EEC9000E8CEA /* AppDelegate.h */,
 				7DF28FDD20B8EEC9000E8CEA /* AppDelegate.m */,
 				7DF28FDF20B8EECB000E8CEA /* Assets.xcassets */,
@@ -127,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DDC879C20B8F4D5006DACF6 /* AutoExpandingTextFieldWindowController.xib in Resources */,
 				7DF28FE020B8EECB000E8CEA /* Assets.xcassets in Resources */,
 				7DF28FE320B8EECB000E8CEA /* MainMenu.xib in Resources */,
 			);
@@ -139,8 +153,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DDC879B20B8F4D5006DACF6 /* AutoExpandingTextFieldWindowController.m in Sources */,
 				7DF28FE620B8EECB000E8CEA /* main.m in Sources */,
 				7DF28FDE20B8EEC9000E8CEA /* AppDelegate.m in Sources */,
+				7DDC879F20BAEF50006DACF6 /* AutoExpandingTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
