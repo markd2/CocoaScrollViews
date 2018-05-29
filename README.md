@@ -7,7 +7,7 @@ in.
 
 ### Xcode Annoyances
 
-Been awhile since I made a new project. Figured I'd keep track of every bug and
+Been a while since I made a new project. Figured I'd keep track of every bug and
 annoyance.
 
 * Committed files via command-line git.  Xcode kept showing "A" and "M", even after
