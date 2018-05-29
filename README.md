@@ -48,4 +48,7 @@ The file “AutoExpandingTextFieldWindowController-PartialInfo.plist”
 couldn’t be opened because there is no such file.
 ```
 
+* It'd be nice if Xcode warned if I have duplicated constraints.
+
+
 

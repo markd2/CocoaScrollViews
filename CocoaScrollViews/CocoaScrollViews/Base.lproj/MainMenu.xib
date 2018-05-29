@@ -11,7 +11,7 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
@@ -70,31 +70,44 @@
         <window title="CocoaScrollViews" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" frameAutosaveName="CocoaScrollViewsWindow" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="205" height="214"/>
+            <rect key="contentRect" x="335" y="390" width="221" height="200"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="221" height="61"/>
+                <rect key="frame" x="0.0" y="0.0" width="221" height="94"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bd9-YP-RcD">
-                        <rect key="frame" x="14" y="13" width="193" height="32"/>
-                        <buttonCell key="cell" type="push" title="Autoexpanding Text Field" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="eZP-oI-cg8">
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="h8Q-UZ-AgG">
+                        <rect key="frame" x="14" y="46" width="193" height="32"/>
+                        <buttonCell key="cell" type="push" title="Autoexpanding Text Field" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="UXL-zx-Lnk">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="autoexpandingTextField:" target="Voe-Tx-rLC" id="Wo3-Te-I2C"/>
+                            <action selector="autoexpandingTextField:" target="Voe-Tx-rLC" id="zFf-PU-zM0"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bd9-YP-RcD">
+                        <rect key="frame" x="14" y="13" width="193" height="32"/>
+                        <buttonCell key="cell" type="push" title="Centering Image" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="eZP-oI-cg8">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="centeringImage:" target="Voe-Tx-rLC" id="TyP-8D-3pb"/>
                         </connections>
                     </button>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="bd9-YP-RcD" secondAttribute="trailing" constant="20" symbolic="YES" id="FoF-jx-KOT"/>
-                    <constraint firstItem="bd9-YP-RcD" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="aKM-mw-8Ml"/>
+                    <constraint firstItem="h8Q-UZ-AgG" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="b5O-cZ-lNL"/>
+                    <constraint firstItem="bd9-YP-RcD" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="iHe-Ui-PuT"/>
+                    <constraint firstAttribute="trailing" secondItem="h8Q-UZ-AgG" secondAttribute="trailing" constant="20" symbolic="YES" id="iRP-lg-OsQ"/>
+                    <constraint firstItem="bd9-YP-RcD" firstAttribute="top" secondItem="h8Q-UZ-AgG" secondAttribute="bottom" constant="12" symbolic="YES" id="kSQ-HN-AOr"/>
                     <constraint firstAttribute="bottom" secondItem="bd9-YP-RcD" secondAttribute="bottom" constant="20" symbolic="YES" id="mBK-2g-TCc"/>
-                    <constraint firstItem="bd9-YP-RcD" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" symbolic="YES" id="so3-gd-49b"/>
+                    <constraint firstItem="h8Q-UZ-AgG" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" symbolic="YES" id="tlS-cy-2GK"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="2" y="17"/>
+            <point key="canvasLocation" x="1.5" y="86"/>
         </window>
     </objects>
 </document>
