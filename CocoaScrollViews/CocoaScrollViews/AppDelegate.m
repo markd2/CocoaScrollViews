@@ -1,6 +1,7 @@
 #import "AppDelegate.h"
 
 #import "AutoExpandingTextFieldWindowController.h"
+#import "CenteringImageWindowController.h"
 
 @interface AppDelegate ()
 @property(weak) IBOutlet NSWindow *window;
@@ -17,5 +18,13 @@
         AutoExpandingTextFieldWindowController.newController;
     [aetfwc showWindow: self];
 } // autoexpandingTextField
+
+
+- (IBAction) centeringImage: (NSButton *) sender {
+    CenteringImageWindowController *ciwc =
+        CenteringImageWindowController.newController;
+    [ciwc showWindow: self];
+
+} // centeringImage
 
 @end // AppDelegate

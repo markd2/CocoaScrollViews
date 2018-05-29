@@ -10,6 +10,8 @@
 		7DDC879B20B8F4D5006DACF6 /* AutoExpandingTextFieldWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDC879920B8F4D5006DACF6 /* AutoExpandingTextFieldWindowController.m */; };
 		7DDC879C20B8F4D5006DACF6 /* AutoExpandingTextFieldWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DDC879A20B8F4D5006DACF6 /* AutoExpandingTextFieldWindowController.xib */; };
 		7DDC879F20BAEF50006DACF6 /* AutoExpandingTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDC879E20BAEF50006DACF6 /* AutoExpandingTextField.m */; };
+		7DDC87A320BE0886006DACF6 /* CenteringImageWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDC87A120BE0886006DACF6 /* CenteringImageWindowController.m */; };
+		7DDC87A420BE0886006DACF6 /* CenteringImageWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DDC87A220BE0886006DACF6 /* CenteringImageWindowController.xib */; };
 		7DF28FDE20B8EEC9000E8CEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF28FDD20B8EEC9000E8CEA /* AppDelegate.m */; };
 		7DF28FE020B8EECB000E8CEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DF28FDF20B8EECB000E8CEA /* Assets.xcassets */; };
 		7DF28FE320B8EECB000E8CEA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DF28FE120B8EECB000E8CEA /* MainMenu.xib */; };
@@ -22,6 +24,9 @@
 		7DDC879A20B8F4D5006DACF6 /* AutoExpandingTextFieldWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoExpandingTextFieldWindowController.xib; sourceTree = "<group>"; };
 		7DDC879D20BAEF50006DACF6 /* AutoExpandingTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoExpandingTextField.h; sourceTree = "<group>"; };
 		7DDC879E20BAEF50006DACF6 /* AutoExpandingTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoExpandingTextField.m; sourceTree = "<group>"; };
+		7DDC87A020BE0886006DACF6 /* CenteringImageWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CenteringImageWindowController.h; sourceTree = "<group>"; };
+		7DDC87A120BE0886006DACF6 /* CenteringImageWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CenteringImageWindowController.m; sourceTree = "<group>"; };
+		7DDC87A220BE0886006DACF6 /* CenteringImageWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CenteringImageWindowController.xib; sourceTree = "<group>"; };
 		7DF28FD920B8EEC9000E8CEA /* CocoaScrollViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaScrollViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DF28FDC20B8EEC9000E8CEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7DF28FDD20B8EEC9000E8CEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,18 +67,21 @@
 		7DF28FDB20B8EEC9000E8CEA /* CocoaScrollViews */ = {
 			isa = PBXGroup;
 			children = (
+				7DF28FDC20B8EEC9000E8CEA /* AppDelegate.h */,
+				7DF28FDD20B8EEC9000E8CEA /* AppDelegate.m */,
 				7DDC879820B8F4D5006DACF6 /* AutoExpandingTextFieldWindowController.h */,
 				7DDC879920B8F4D5006DACF6 /* AutoExpandingTextFieldWindowController.m */,
 				7DDC879A20B8F4D5006DACF6 /* AutoExpandingTextFieldWindowController.xib */,
 				7DDC879D20BAEF50006DACF6 /* AutoExpandingTextField.h */,
 				7DDC879E20BAEF50006DACF6 /* AutoExpandingTextField.m */,
-				7DF28FDC20B8EEC9000E8CEA /* AppDelegate.h */,
-				7DF28FDD20B8EEC9000E8CEA /* AppDelegate.m */,
 				7DF28FDF20B8EECB000E8CEA /* Assets.xcassets */,
 				7DF28FE120B8EECB000E8CEA /* MainMenu.xib */,
 				7DF28FE420B8EECB000E8CEA /* Info.plist */,
 				7DF28FE520B8EECB000E8CEA /* main.m */,
 				7DF28FE720B8EECB000E8CEA /* CocoaScrollViews.entitlements */,
+				7DDC87A020BE0886006DACF6 /* CenteringImageWindowController.h */,
+				7DDC87A120BE0886006DACF6 /* CenteringImageWindowController.m */,
+				7DDC87A220BE0886006DACF6 /* CenteringImageWindowController.xib */,
 			);
 			path = CocoaScrollViews;
 			sourceTree = "<group>";
@@ -141,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DDC879C20B8F4D5006DACF6 /* AutoExpandingTextFieldWindowController.xib in Resources */,
+				7DDC87A420BE0886006DACF6 /* CenteringImageWindowController.xib in Resources */,
 				7DF28FE020B8EECB000E8CEA /* Assets.xcassets in Resources */,
 				7DF28FE320B8EECB000E8CEA /* MainMenu.xib in Resources */,
 			);
@@ -155,6 +164,7 @@
 			files = (
 				7DDC879B20B8F4D5006DACF6 /* AutoExpandingTextFieldWindowController.m in Sources */,
 				7DF28FE620B8EECB000E8CEA /* main.m in Sources */,
+				7DDC87A320BE0886006DACF6 /* CenteringImageWindowController.m in Sources */,
 				7DF28FDE20B8EEC9000E8CEA /* AppDelegate.m in Sources */,
 				7DDC879F20BAEF50006DACF6 /* AutoExpandingTextField.m in Sources */,
 			);
