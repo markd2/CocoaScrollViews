@@ -1,11 +1,11 @@
-
 #import "SimpleSlabsWindowController.h"
 
+#import "SlabOne.h"
+
 @interface SimpleSlabsWindowController ()
-@property (strong) IBOutlet NSStackView *stackView;
-
+@property(strong) IBOutlet NSStackView *stackView;
+@property(strong) IBOutlet NSButton *addSlabButton;
 @end // extension
-
 
 @implementation SimpleSlabsWindowController
 
@@ -17,13 +17,24 @@
 //    top/leading zero.  
 //    Width equal to the clip view width. Height >= clip view height, 400 priority
 
+- (void) dealloc {
+    NSLog(@"HUH");
+} // dealloc
+
 - (void)windowDidLoad {
     [super windowDidLoad];
 } // windowDidLoad
 
 
-- (IBAction) addSlab: (NSButton *) sender {
-    NSLog(@"SNORK");
-} // addSlab
+- (IBAction)addNewSlab:(NSButton *)sender {
+    CGRect frame = CGRectMake(0, 0, 345, 123);
+    NSView *slab = [[SlabOne alloc] initWithFrame: frame];
+    slab.translatesAutoresizingMaskIntoConstraints = NO;
+
+    [self.stackView addArrangedSubview: slab];
+
+    NSLog(@"SNOOGLE");
+} // addNewSlab
+
 
 @end // SimpleSlabsWindowController

@@ -8,6 +8,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="SimpleSlabsWindowController">
             <connections>
+                <outlet property="addSlabButton" destination="aTV-I8-qOB" id="GbJ-Gi-VNM"/>
                 <outlet property="stackView" destination="ZR8-gL-9sH" id="uJO-RQ-IeZ"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>
@@ -30,7 +31,7 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="addSlab:" target="-2" id="YMb-3T-rQl"/>
+                            <action selector="addNewSlab:" target="-2" id="ksy-LE-vk1"/>
                         </connections>
                     </button>
                     <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iq-ln-Erh">

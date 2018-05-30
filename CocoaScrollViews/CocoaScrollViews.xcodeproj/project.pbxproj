@@ -15,6 +15,8 @@
 		7DDC87AA20BE20AF006DACF6 /* SimpleSlabsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDC87A820BE20AF006DACF6 /* SimpleSlabsWindowController.m */; };
 		7DDC87AB20BE20AF006DACF6 /* SimpleSlabsWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DDC87A920BE20AF006DACF6 /* SimpleSlabsWindowController.xib */; };
 		7DDC87AE20BE21C6006DACF6 /* WindowControllerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDC87AD20BE21C6006DACF6 /* WindowControllerBase.m */; };
+		7DDC87B120BE27CF006DACF6 /* SlabOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDC87B020BE27CF006DACF6 /* SlabOne.m */; };
+		7DDC87B420BE2C50006DACF6 /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDC87B320BE2C50006DACF6 /* Application.m */; };
 		7DF28FDE20B8EEC9000E8CEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF28FDD20B8EEC9000E8CEA /* AppDelegate.m */; };
 		7DF28FE020B8EECB000E8CEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DF28FDF20B8EECB000E8CEA /* Assets.xcassets */; };
 		7DF28FE320B8EECB000E8CEA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DF28FE120B8EECB000E8CEA /* MainMenu.xib */; };
@@ -35,6 +37,10 @@
 		7DDC87A920BE20AF006DACF6 /* SimpleSlabsWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleSlabsWindowController.xib; sourceTree = "<group>"; };
 		7DDC87AC20BE21C6006DACF6 /* WindowControllerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowControllerBase.h; sourceTree = "<group>"; };
 		7DDC87AD20BE21C6006DACF6 /* WindowControllerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowControllerBase.m; sourceTree = "<group>"; };
+		7DDC87AF20BE27CF006DACF6 /* SlabOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlabOne.h; sourceTree = "<group>"; };
+		7DDC87B020BE27CF006DACF6 /* SlabOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlabOne.m; sourceTree = "<group>"; };
+		7DDC87B220BE2C50006DACF6 /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
+		7DDC87B320BE2C50006DACF6 /* Application.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Application.m; sourceTree = "<group>"; };
 		7DF28FD920B8EEC9000E8CEA /* CocoaScrollViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaScrollViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DF28FDC20B8EEC9000E8CEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7DF28FDD20B8EEC9000E8CEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -77,6 +83,8 @@
 			children = (
 				7DF28FDC20B8EEC9000E8CEA /* AppDelegate.h */,
 				7DF28FDD20B8EEC9000E8CEA /* AppDelegate.m */,
+				7DDC87B220BE2C50006DACF6 /* Application.h */,
+				7DDC87B320BE2C50006DACF6 /* Application.m */,
 				7DDC87AC20BE21C6006DACF6 /* WindowControllerBase.h */,
 				7DDC87AD20BE21C6006DACF6 /* WindowControllerBase.m */,
 				7DDC879820B8F4D5006DACF6 /* AutoExpandingTextFieldWindowController.h */,
@@ -95,6 +103,8 @@
 				7DDC87A720BE20AF006DACF6 /* SimpleSlabsWindowController.h */,
 				7DDC87A820BE20AF006DACF6 /* SimpleSlabsWindowController.m */,
 				7DDC87A920BE20AF006DACF6 /* SimpleSlabsWindowController.xib */,
+				7DDC87AF20BE27CF006DACF6 /* SlabOne.h */,
+				7DDC87B020BE27CF006DACF6 /* SlabOne.m */,
 			);
 			path = CocoaScrollViews;
 			sourceTree = "<group>";
@@ -176,6 +186,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DDC87B420BE2C50006DACF6 /* Application.m in Sources */,
+				7DDC87B120BE27CF006DACF6 /* SlabOne.m in Sources */,
 				7DDC879B20B8F4D5006DACF6 /* AutoExpandingTextFieldWindowController.m in Sources */,
 				7DDC87AE20BE21C6006DACF6 /* WindowControllerBase.m in Sources */,
 				7DF28FE620B8EECB000E8CEA /* main.m in Sources */,
