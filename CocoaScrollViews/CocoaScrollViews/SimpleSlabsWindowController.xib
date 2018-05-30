@@ -3,10 +3,12 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="SimpleSlabsWindowController">
             <connections>
+                <outlet property="stackView" destination="ZR8-gL-9sH" id="uJO-RQ-IeZ"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -21,15 +23,62 @@
                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aTV-I8-qOB">
-                        <rect key="frame" x="17" y="216" width="76" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="push" title="Oogle" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GEH-a7-0zF">
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aTV-I8-qOB">
+                        <rect key="frame" x="14" y="222" width="95" height="32"/>
+                        <buttonCell key="cell" type="push" title="Add Slab" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GEH-a7-0zF">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="addSlab:" target="-2" id="YMb-3T-rQl"/>
+                        </connections>
                     </button>
+                    <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iq-ln-Erh">
+                        <rect key="frame" x="111" y="20" width="349" height="230"/>
+                        <clipView key="contentView" id="yAs-5d-Khi">
+                            <rect key="frame" x="1" y="1" width="332" height="213"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <view translatesAutoresizingMaskIntoConstraints="NO" id="9lj-Ce-6yK">
+                                    <rect key="frame" x="0.0" y="-15" width="332" height="213"/>
+                                    <subviews>
+                                        <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZR8-gL-9sH">
+                                            <rect key="frame" x="0.0" y="0.0" width="332" height="213"/>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="ZR8-gL-9sH" secondAttribute="trailing" id="MGX-eB-byS"/>
+                                        <constraint firstAttribute="bottom" secondItem="ZR8-gL-9sH" secondAttribute="bottom" id="SAv-Y0-pTV"/>
+                                        <constraint firstItem="ZR8-gL-9sH" firstAttribute="leading" secondItem="9lj-Ce-6yK" secondAttribute="leading" id="ZTG-HL-mXa"/>
+                                        <constraint firstItem="ZR8-gL-9sH" firstAttribute="top" secondItem="9lj-Ce-6yK" secondAttribute="top" id="jau-bA-Yrr"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="9lj-Ce-6yK" firstAttribute="top" secondItem="yAs-5d-Khi" secondAttribute="top" constant="15" id="4cJ-OI-iIb"/>
+                                <constraint firstItem="9lj-Ce-6yK" firstAttribute="height" relation="greaterThanOrEqual" secondItem="yAs-5d-Khi" secondAttribute="height" priority="400" id="9sV-kX-6KS"/>
+                                <constraint firstItem="9lj-Ce-6yK" firstAttribute="width" secondItem="yAs-5d-Khi" secondAttribute="width" id="UgI-7S-ara"/>
+                                <constraint firstItem="9lj-Ce-6yK" firstAttribute="leading" secondItem="yAs-5d-Khi" secondAttribute="leading" id="wFo-VX-1RQ"/>
+                            </constraints>
+                        </clipView>
+                        <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="RZO-ls-gft">
+                            <rect key="frame" x="1" y="214" width="332" height="15"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="Ff6-4F-xVL">
+                            <rect key="frame" x="333" y="1" width="15" height="213"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="aTV-I8-qOB" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" symbolic="YES" id="G2b-Xx-Two"/>
+                    <constraint firstItem="6iq-ln-Erh" firstAttribute="leading" secondItem="aTV-I8-qOB" secondAttribute="trailing" constant="8" symbolic="YES" id="GaG-lx-EJN"/>
+                    <constraint firstItem="aTV-I8-qOB" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" symbolic="YES" id="bBK-Xp-nUl"/>
+                    <constraint firstAttribute="trailing" secondItem="6iq-ln-Erh" secondAttribute="trailing" constant="20" symbolic="YES" id="fPE-Ug-qPI"/>
+                    <constraint firstAttribute="bottom" secondItem="6iq-ln-Erh" secondAttribute="bottom" constant="20" symbolic="YES" id="kEb-I8-1mM"/>
+                    <constraint firstItem="6iq-ln-Erh" firstAttribute="top" secondItem="aTV-I8-qOB" secondAttribute="top" id="wEq-Ul-xYY"/>
+                </constraints>
             </view>
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
