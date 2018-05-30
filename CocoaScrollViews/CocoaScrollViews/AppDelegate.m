@@ -6,11 +6,13 @@
 
 @interface AppDelegate ()
 @property(weak) IBOutlet NSWindow *window;
+@property(strong) NSMutableArray<WindowControllerBase*> *windowControllers;
 @end // extension
 
 @implementation AppDelegate
 
 - (void) applicationDidFinishLaunching: (NSNotification *) aNotification {
+    self.windowControllers = NSMutableArray.new;
 } // applicationDidFinishLaunching
 
 
@@ -18,6 +20,7 @@
     AutoExpandingTextFieldWindowController *aetfwc =
         AutoExpandingTextFieldWindowController.newController;
     [aetfwc showWindow: self];
+    [self.windowControllers addObject: aetfwc];
 } // autoexpandingTextField
 
 
@@ -25,6 +28,7 @@
     CenteringImageWindowController *ciwc =
         CenteringImageWindowController.newController;
     [ciwc showWindow: self];
+    [self.windowControllers addObject: ciwc];
 
 } // centeringImage
 
@@ -32,6 +36,7 @@
 - (IBAction) simpleSlabs: (NSButton *) sender {
     SimpleSlabsWindowController *sswc = SimpleSlabsWindowController.newController;
     [sswc showWindow: self];
+    [self.windowControllers addObject: sswc];
 
 } // centeringImage
 
