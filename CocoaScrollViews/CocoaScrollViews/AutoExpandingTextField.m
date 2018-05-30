@@ -11,7 +11,6 @@
     (void)self.stringValue;
 
     CGFloat height = [self.cell cellSizeForBounds: frame].height;
-    NSLog(@"SNORK %@ -> %f", NSStringFromRect(frame), height);
     return NSMakeSize(width, height);
 
 } // intrinsicContentSize

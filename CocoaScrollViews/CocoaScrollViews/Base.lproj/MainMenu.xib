@@ -70,14 +70,14 @@
         <window title="CocoaScrollViews" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" frameAutosaveName="CocoaScrollViewsWindow" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="221" height="200"/>
+            <rect key="contentRect" x="335" y="390" width="221" height="172"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="221" height="94"/>
+                <rect key="frame" x="0.0" y="0.0" width="221" height="127"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="h8Q-UZ-AgG">
-                        <rect key="frame" x="14" y="46" width="193" height="32"/>
+                        <rect key="frame" x="14" y="79" width="193" height="32"/>
                         <buttonCell key="cell" type="push" title="Autoexpanding Text Field" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="UXL-zx-Lnk">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -87,7 +87,7 @@
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bd9-YP-RcD">
-                        <rect key="frame" x="14" y="13" width="193" height="32"/>
+                        <rect key="frame" x="14" y="46" width="193" height="32"/>
                         <buttonCell key="cell" type="push" title="Centering Image" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="eZP-oI-cg8">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -96,18 +96,31 @@
                             <action selector="centeringImage:" target="Voe-Tx-rLC" id="TyP-8D-3pb"/>
                         </connections>
                     </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9zW-NG-phP">
+                        <rect key="frame" x="14" y="13" width="193" height="32"/>
+                        <buttonCell key="cell" type="push" title="Simple Slabs" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Vbb-6B-h0b">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="simpleSlabs:" target="Voe-Tx-rLC" id="9Q1-Wn-LoW"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailing" secondItem="9zW-NG-phP" secondAttribute="trailing" constant="20" symbolic="YES" id="6lL-DR-2uG"/>
                     <constraint firstAttribute="trailing" secondItem="bd9-YP-RcD" secondAttribute="trailing" constant="20" symbolic="YES" id="FoF-jx-KOT"/>
+                    <constraint firstItem="9zW-NG-phP" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="Rqt-4V-VEa"/>
+                    <constraint firstAttribute="bottom" secondItem="9zW-NG-phP" secondAttribute="bottom" constant="20" symbolic="YES" id="VD5-Bk-Cu6"/>
                     <constraint firstItem="h8Q-UZ-AgG" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="b5O-cZ-lNL"/>
                     <constraint firstItem="bd9-YP-RcD" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="iHe-Ui-PuT"/>
                     <constraint firstAttribute="trailing" secondItem="h8Q-UZ-AgG" secondAttribute="trailing" constant="20" symbolic="YES" id="iRP-lg-OsQ"/>
                     <constraint firstItem="bd9-YP-RcD" firstAttribute="top" secondItem="h8Q-UZ-AgG" secondAttribute="bottom" constant="12" symbolic="YES" id="kSQ-HN-AOr"/>
-                    <constraint firstAttribute="bottom" secondItem="bd9-YP-RcD" secondAttribute="bottom" constant="20" symbolic="YES" id="mBK-2g-TCc"/>
                     <constraint firstItem="h8Q-UZ-AgG" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" symbolic="YES" id="tlS-cy-2GK"/>
+                    <constraint firstItem="9zW-NG-phP" firstAttribute="top" secondItem="bd9-YP-RcD" secondAttribute="bottom" constant="12" symbolic="YES" id="yQi-X6-apt"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="1.5" y="86"/>
+            <point key="canvasLocation" x="1.5" y="125"/>
         </window>
     </objects>
 </document>

@@ -2,6 +2,7 @@
 
 #import "AutoExpandingTextFieldWindowController.h"
 #import "CenteringImageWindowController.h"
+#import "SimpleSlabsWindowController.h"
 
 @interface AppDelegate ()
 @property(weak) IBOutlet NSWindow *window;
@@ -24,6 +25,13 @@
     CenteringImageWindowController *ciwc =
         CenteringImageWindowController.newController;
     [ciwc showWindow: self];
+
+} // centeringImage
+
+
+- (IBAction) simpleSlabs: (NSButton *) sender {
+    SimpleSlabsWindowController *sswc = SimpleSlabsWindowController.newController;
+    [sswc showWindow: self];
 
 } // centeringImage
 
