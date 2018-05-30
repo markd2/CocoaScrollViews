@@ -28,7 +28,8 @@
 
 - (IBAction)addNewSlab:(NSButton *)sender {
     CGRect frame = CGRectMake(0, 0, 345, 123);
-    NSView *slab = [[SlabOne alloc] initWithFrame: frame];
+    //NSView *slab = [[SlabOne alloc] initWithFrame: frame];
+    SlabOne *slab = SlabOne.gimmeANewOne;
     slab.translatesAutoresizingMaskIntoConstraints = NO;
 
     [self.stackView addArrangedSubview: slab];
